@@ -12,9 +12,9 @@ class   UserController extends Controller
     // Función para mostrar una lista de Users
     public function listing()
     {
-
-        $Users = User::all();
-        return response()->json(($Users));
+        $Usuarios = User::all();
+     
+        return response()->json(($Usuarios));
     }
 
     public function dtailUser($id)
